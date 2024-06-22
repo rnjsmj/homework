@@ -1,0 +1,23 @@
+package com.kh.homework.member.controller;
+
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PostMapping;
+
+import com.kh.homework.member.model.service.MemberServcie;
+
+import lombok.RequiredArgsConstructor;
+
+@Controller
+@RequiredArgsConstructor
+public class MemberController {
+
+	private final MemberServcie memberServie;
+	private final BCryptPasswordEncoder pwdEncoder;
+	
+	@PostMapping("login")
+	public String login() {
+		
+		return "redirect:/";
+	}
+}

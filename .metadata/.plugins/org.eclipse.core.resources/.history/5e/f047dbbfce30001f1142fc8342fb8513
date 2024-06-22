@@ -1,0 +1,13 @@
+package com.kh.homework.member.model.service;
+
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+
+import lombok.RequiredArgsConstructor;
+@RequiredArgsConstructor
+public interface MemberServcie {
+	
+	private final BCryptPasswordEncoder pwdEncoder;
+	
+	String encPw = pwdEncoder.encode("1234");
+	log.info("1234: {}", encPw);
+}

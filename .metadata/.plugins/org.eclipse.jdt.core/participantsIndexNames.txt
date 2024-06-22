@@ -1,0 +1,7 @@
+INDEX VERSION 1.131
+E:\2024\homework\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1345242732.index
+\homework\src\main\java
+E:\2024\homework\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\770923330.index
+\homework\src\main\java
+E:\2024\homework\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2573976338.index
+\homework\src\main\java

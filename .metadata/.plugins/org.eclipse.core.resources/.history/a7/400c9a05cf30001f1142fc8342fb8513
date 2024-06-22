@@ -1,0 +1,15 @@
+package com.kh.homework.util;
+
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+
+public class PwdTest {
+
+	public static void main(String[] args) {
+		BCryptPasswordEncoder pwdEncoder = new BCryptPasswordEncoder();
+		
+		String encPw = pwdEncoder.encode("1234");
+		log.info("pass : {}", encPw);
+
+	}
+
+}

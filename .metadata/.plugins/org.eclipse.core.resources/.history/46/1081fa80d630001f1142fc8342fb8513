@@ -1,0 +1,12 @@
+package com.kh.homework.member.model.service;
+
+import com.kh.homework.member.model.vo.Member;
+
+public class MemberServiceImpl implements MemberServcie {
+
+	@Override
+	public Member findMember(String userId) {
+		return null;
+	}
+
+}

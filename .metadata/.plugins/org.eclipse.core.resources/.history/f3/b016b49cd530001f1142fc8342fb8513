@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ <mapper namespace="memberMapper">
+ 	<select id="findMember" resultType="member">
+ 		SELECT
+ 				USER_ID userId,
+ 				USER_PWD userPwd,
+ 				USER_NAME userName,
+ 				EMAIL email,
+ 				PHONE phone,
+ 				POSTCODE postcode,
+ 				ADDRESS1 address1,
+ 				ADDRESS2 address2,
+ 				ENROLL_DATE enrollDate
+ 		  FROM
+ 		  		MEMBER
+ 		 WHERE
+ 		 		STATUS = 'Y'
+ 		   AND
+ 		   		USER_ID = #{userId}
+ 	</select>
+ </mapper>
